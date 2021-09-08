@@ -1,0 +1,365 @@
+/* maincolor:#381A1F; */
+/* secondcolor:#83983E; */
+/* third color:#79ABC8 */
+@import url('https://fonts.googleapis.com/css2?family=Felipa&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-family: 'Felipa', cursive;
+    color: #381A1F;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.frame {
+    margin: 0 auto;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 30px;
+
+}
+
+li:hover {
+    background: #381A1F;
+}
+
+/* header section css */
+nav {
+    background: #57AFC6;
+    padding: 0px 5%;
+    height: 45px;
+    color: #fff;
+
+}
+
+.logo {
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+
+}
+
+.logo .company_name {
+    margin-left: 10px;
+    font-weight: 600;
+}
+ul{
+    margin: 0 !important;
+}
+
+.menu {
+    float: right;
+}
+
+.menu a {
+    color: #fff;
+}
+
+.hero_container {
+    padding: 0px 0 0px 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-image: url(../img/background/darren-nunis-cxE7SXKnzv0-unsplash.jpg);
+    background-size: cover;
+    min-height: 450px;
+}
+.hero_text h2 {
+    text-transform: uppercase;
+    font-size: 150%;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    background:linear-gradient(#61dffc,#381A1F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero_text p {
+    font-size: 90%;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+    line-height: 120%;
+}
+
+.hero_btn {
+    background: #61dffc;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+span{
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 10px;
+    color: #a4a3a3;
+}
+.hero_btn:hover{
+    background: #381A1F;
+    box-shadow: 0 0 17px #381A1F;
+}
+.hero_text {
+    width: 50%;
+}
+
+.hero_img {
+    height: 450px;
+    width: 45%;
+}
+
+.hero_img img {
+    width: 400px;
+}
+
+/* header section css */
+/* gallery section css? */
+.gallery_section {   
+    width: 100%;
+    background: linear-gradient(to right,#097ef3,#381A1F);
+}
+.gallery_menu a {
+    color: #fff;
+}
+.gallery_main{
+
+    width: 100%;
+    background-size: cover;
+    padding-top: 40px;
+    /* background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../img/background/ajnabi-creation-lvuWeyrxrtA-unsplash.jpg); */
+    background: linear-gradient(to right,#097ef3,#381A1F);
+}
+.gallery_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.gallery{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+ .gallery img{
+    width: 100%;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    filter: grayscale(80%);
+    transition: all .3s linear;
+ }
+.gallery img:hover{
+    filter: grayscale(0) ;
+    position: relative;
+    transform: scale(1.1);
+    z-index: 999;
+}
+/* gallery section css? */
+.blog_section{
+    width: 100%;
+    background: linear-gradient(to right,#097ef3,#381A1F);
+    padding-top: 50px;
+}
+.blog{
+    width: 90%;
+    margin: 0 auto;
+}
+.blog_section>h1{
+    height: 50px;
+    background: linear-gradient(#8EAACC ,#fff );
+    margin: 0 auto 20px auto;
+
+}
+.blog_section h2{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.blog_container{
+    width: 49%;
+    display: inline-block;
+    margin: 0 auto 20px auto;
+}
+.blog_img{
+    width: 100%;
+    height: 200px;
+}
+.blog_img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.blog_contact{
+    height: 300px;
+    background: rgb(236, 236, 236);
+    padding: 10px;
+}
+.blog_contact h5{
+    color: #735359d0;
+}
+.blog_contact h3{
+    margin-top: 10px;
+    line-height: 90%;
+}
+
+.blog_contact p{
+    margin-top: 20px;
+    color: #5f5d5e;
+}
+/* payment */
+.pay_section{
+
+    background: linear-gradient(to right,#097ef3,#381A1F);
+    padding-bottom: 90px;
+    padding-top: 40px;
+    color: #fff;
+}
+.payment_title{
+    text-align: center;
+    margin-bottom: 60px;
+    color: #fff !important;
+}
+.payment{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.payment_card{
+    width: 45%;
+}
+.payment_info{
+    width: 50%;
+}
+
+.payment_card h3{
+    margin-bottom: 7px;
+} 
+.card{
+    margin-top: 20px;
+    padding:20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 1px #5f5d5e,0px 10px 10px #381A1F;
+}
+.input_field{
+    margin-bottom: 20px;
+} 
+.twoInput_field{
+    display: flex;
+}
+.date{
+    display: flex;
+
+}
+.date input{
+    width: 50px !important;
+    margin-right: 10px;
+} 
+.space_between{
+    justify-content: space-between;
+}
+#cvv::placeholder{
+    color: #381A1F;
+}
+#cvv{
+    width: 100px;
+}
+.card input{
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid #a4a3a3;
+    padding:10px;
+    padding-left: 0;
+}
+.card .input_field input{
+    width: 100%;
+}
+input::placeholder{
+    color: #9492938d;
+    font-size: 120%;
+
+}
+label{
+    display: block;
+    color: #9492938d;
+}
+.icon img{
+    float: right;
+    width: 30px;
+}
+.card form{
+    clear: both;
+}
+.info_form{
+    margin-top: 20px;
+}
+.info_form input,select{
+    border: 1px solid #a4a3a3;
+    padding: 10px;
+    border-radius: 20px;
+}
+.payment_info h3{
+    margin-bottom: 40px
+} 
+.info_form .twoInput_field{
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.info_form input{
+    outline: none;
+}
+.info_form .twoInput_field input{
+    width: 45%;
+}
+.info_form .input_field input{
+    width: 100%;
+}
+select{
+    width: 100%;
+    color:#9492938d ;
+    outline: none;
+}
+button{
+    padding: 10px 60px;
+    color: #ffff;
+    background: #097ef3;
+    border: none;
+    border-radius: 20px;
+    margin: 40px 40% 0px 40%;
+    transition: all .3s linear;
+}
+button:hover{
+    background: gold;
+}
+/* payment */
+
+/* footer */
+footer{
+    background: #381A1F;
+    color: #fff;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
